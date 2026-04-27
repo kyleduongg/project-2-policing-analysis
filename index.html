@@ -111,31 +111,39 @@
                 box-shadow: 0 0.1em 0.2em var(--color-neutral-95);
                 text-align: center;
                 background: white;
+            }
 
-                > figcaption {
-                    font: 500 75% var(--font-sans);
-                    background: var(--color-neutral-95);
-                    padding: 0.5rem;
-                    margin: -0.5rem;
-                    margin-top: 0.5rem;
-                    counter-increment: figure;
-                    text-align: left;
+            figure img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+                border-radius: 4px;
+            }
 
-                    &::before {
-                        content: "Figure " counter(figure) ": ";
-                        font-weight: bold;
-                        color: var(--color-neutral-40);
-                    }
+            figure > figcaption {
+                font: 500 75% var(--font-sans);
+                background: var(--color-neutral-95);
+                padding: 0.5rem;
+                margin: -0.5rem;
+                margin-top: 0.5rem;
+                counter-increment: figure;
+                text-align: left;
 
-                    a:not(:hover, :focus, :active) {
-                        color: inherit;
-                        text-decoration: underline;
-                        text-decoration-color: color-mix(
-                            in lab,
-                            currentColor,
-                            transparent 70%
-                        );
-                    }
+                &::before {
+                    content: "Figure " counter(figure) ": ";
+                    font-weight: bold;
+                    color: var(--color-neutral-40);
+                }
+
+                a:not(:hover, :focus, :active) {
+                    color: inherit;
+                    text-decoration: underline;
+                    text-decoration-color: color-mix(
+                        in lab,
+                        currentColor,
+                        transparent 70%
+                    );
                 }
             }
         </style>
@@ -158,7 +166,7 @@
                 <h3>FOR the Proposition</h3>
 
                 <figure>
-                    <img src="./Project 2 Report_files/IMAGE_FILENAME" alt="">
+                    <img src="images/for_police.jpg" alt="A bar chart showing Police Officers have the highest substantiation rate among all ranks!">
                     <figcaption>BRIEF CAPTION HERE.</figcaption>
                 </figure>
 
@@ -175,7 +183,7 @@
                 <h3>AGAINST the Proposition</h3>
 
                 <figure>
-                    <img src="./Project 2 Report_files/IMAGE_FILENAME" alt="">
+                    <img src="images/against_police.jpg" alt="A bar chart showing Police Officers receive the fewest complaints per officer!">
                     <figcaption>BRIEF CAPTION HERE.</figcaption>
                 </figure>
 
